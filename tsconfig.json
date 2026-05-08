@@ -1,0 +1,30 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"],
+  "strict": true,
+  "compilerOptions": {
+  "types": ["node", "jest"],
+    "resolveJsonModule": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@screens/*": ["src/screens/*"],
+      "@api/*": ["src/api/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@types/*": ["src/screens/types/*"],
+      "@components/*": ["src/components/*"],
+      "@appTypes/*": ["src/appTypes/*"],
+      "@store/*": ["src/store/*"],
+      "@utils/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@services/*": ["src/services/*"],
+      "@providers/*": ["src/providers/*"],
+      "@contexts/*": ["src/contexts/*"]
+    }
+  }
+}

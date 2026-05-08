@@ -1,0 +1,51 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+ content: [
+    "./App.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./screens/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./appTypes/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        darkWhite: "#B3B3B3",
+        grayColor: "#3d3d3d",  
+        grayLight: "#acacac",
+        lightGray: "#CFCFCF",
+        textPlaceholder:"#828286",
+        blueColor: "#007aff",
+        redColor: "#ff5f57",  
+        linksColor:"#63b9ff",
+        redTextColor:"rgba(255, 56, 60, 1)",
+        borderColor: "rgba(128, 128, 128, 0.55)",
+        border2Color: "rgba(255, 255, 255, 0.2)",
+        border1Color: "rgba(255, 255, 255, 0.1)",
+        whiteWithTransparentColor: "rgba(255, 255, 255, 0.1)",
+        white6Color: "rgba(255, 255, 255, 0.6)",
+        white06Color: "rgba(255, 255, 255, 0.06)",
+        white10Color: "rgba(255, 255, 255, 0.1)",
+        cardBackground:"#48176033",
+        textGray:"rgba(255, 255, 255, 0.6)",
+        friendBackground: "rgb(72, 23, 96)",
+        acceptStatus: "#00c8b3",
+        pendingStatus: "#ff8d28",
+        declinedStatus: "#ff383c",
+        viewedStatus: "#34c759",
+        purpleColor: "#cb30e0",
+        pinkColor: "#FF4ADA",
+        primaryBackground: "#EDEDF9",
+        pinkWithTransparent: "rgba(162, 24, 133, 0.2)",
+      },
+      fontFamily: {
+        bold: ['SF-Pro-Display-Bold'],
+        regular: ['Fredoka-Regular'],
+        medium: ['SF-Pro-Display-Medium'],
+        semibold: ['Fredoka-SemiBold'],
+      },
+    },
+  },
+  plugins: [],
+}
+

@@ -1,0 +1,76 @@
+export const ENDPOINTS = {
+  auth: {
+    loginEmail: '/auth/email/login',
+    registerEmail: '/auth/email/register',
+    logout: '/auth/logout',
+    googleSignin: '/auth/google/signin',
+    appleSignin: '/auth/apple/signin',
+    tiktokSignin: '/auth/tiktok/signin',
+    emailConfirm: '/auth/email/confirm',
+    emailResend: '/auth/email/resend',
+    passwordForgot: '/auth/password/forgot',
+    passwordReset: '/auth/password/reset',
+  },
+  alarms: {
+    next: '/alarms/next',
+    upcoming: '/alarms/upcoming',
+    past: '/alarms/past',
+    sent: '/alarms/sent',
+    self: '/alarms/self',
+    confirm: (id: string) => `/alarms/${id}/confirm`,
+    reject: (id: string) => `/alarms/${id}/reject`,
+    got: (id: string) => `/alarms/${id}/got`,
+    dismiss: (id: string) => `/alarms/${id}/dismiss`,
+    snooze: (id: string) => `/alarms/${id}/snooze`,
+    media: {
+      video: '/alarms/media/video',
+      voice: '/alarms/media/voice',
+      song: '/alarms/media/song',
+      puzzle: '/alarms/media/puzzle',
+    },
+    friendsSet: '/alarms/friends/set',
+    clone: (id: string) => `/alarms/${id}/clone`,
+    get: (id: string) => `/alarms/${id}`,
+    delete: (id: string) => `/alarms/${id}`,
+    patchSelf: (id: string) => `/alarms/${id}/self`,
+    patchFriend: (id: string) => `/alarms/${id}/friend`,
+    triggered: (id: string) => `/alarms/${id}/triggered`,
+  },
+  notifications: {
+    list: '/notifications',
+    settings: '/notifications/settings',
+    readAll: '/notifications/read-all',
+    read: (id: string) => `/notifications/${id}/read`,
+  },
+  media: {
+    requestUpload: '/alarms/media/request-upload',
+    confirmUpload: '/alarms/confirm-upload',
+  },
+  friends: {
+    list: '/friends',
+    create: '/friends',
+    import: '/friends/import',
+    accept: (id: string) => `/friends/${id}/accept`,
+    reject: (id: string) => `/friends/${id}/reject`,
+    block: (id: string) => `/friends/${id}/block`,
+    unblock: (id: string) => `/friends/${id}/unblock`,
+    delete: (id: string) => `/friends/${id}`,
+    resend: (id: string) => `/friends/${id}/resend`,
+    pair: '/friends/pair',
+  },
+  devices: {
+    list: '/devices',
+    register: '/devices/register',
+  },
+  users: {
+    me: '/users/me',
+    profilePatch: '/users/me/profile',
+    avatar: '/users/avatar',
+    avatarRemove: '/users/avatar/remove',
+    deleteMe: '/users/me',
+  },
+} as const;
+
+export type Endpoints = typeof ENDPOINTS;
+
+export default ENDPOINTS;
