@@ -1,5 +1,19 @@
 # Example App
 
+## Tech Stack
+
+- React Native `0.81.4`
+- React `19`
+- TypeScript
+- React Navigation
+- Redux Toolkit + Redux Persist
+- TanStack React Query
+- NativeWind + Tailwind CSS
+- Firebase Cloud Messaging + Notifee
+- Axios
+- Formik + Yup
+- Jest + ESLint + Prettier
+
 React Native mobile app.
 
 ## Requirements
